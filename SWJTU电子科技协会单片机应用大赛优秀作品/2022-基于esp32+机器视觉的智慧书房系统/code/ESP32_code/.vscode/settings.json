@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "fsm_fsm.h": "c",
+        "n_frame.h": "c",
+        "nf_type.h": "c",
+        "nf_assert.h": "c",
+        "nf_signal.h": "c",
+        "nf_fsm.h": "c",
+        "nf_conf.h": "c",
+        "stdint.h": "c",
+        "arduino.h": "c",
+        "esp32-hal-adc.h": "c",
+        "chipsets.h": "c",
+        "usb.h": "c",
+        "dsp_dev.h": "c",
+        "in_dev.h": "c",
+        "mywatch.h": "c",
+        "mygui.h": "c"
+    }
+}

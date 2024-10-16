@@ -1,0 +1,50 @@
+{
+    "name": "MPU6050_tockn", 
+    "version": "1.5.2", 
+    "keywords": [
+        "sensors"
+    ], 
+    "description": "Arduino library for easy communicating with the MPU6050.", 
+    "frameworks": [
+        "arduino"
+    ], 
+    "platforms": [
+        "atmelavr", 
+        "atmelsam", 
+        "espressif32", 
+        "espressif8266", 
+        "intel_arc32", 
+        "microchippic32", 
+        "nordicnrf51", 
+        "nordicnrf52", 
+        "ststm32", 
+        "ststm8", 
+        "teensy", 
+        "timsp430"
+    ], 
+    "authors": [
+        {
+            "email": null, 
+            "url": null, 
+            "maintainer": true, 
+            "name": "tockn"
+        }
+    ], 
+    "repository": {
+        "type": "git", 
+        "url": "https://github.com/Tockn/MPU6050_tockn"
+    }, 
+    "homepage": null, 
+    "export": {
+        "include": null, 
+        "exclude": [
+            "extras", 
+            "docs", 
+            "tests", 
+            "test", 
+            "*.doxyfile", 
+            "*.pdf"
+        ]
+    }, 
+    "id": 2824
+}

@@ -1,0 +1,192 @@
+build:
+  generated-by: csolution version 2.2.1
+  solution: threeWh.csolution.yml
+  project: threeWh.cproject.yml
+  context: threeWh+threeWh
+  compiler: AC6
+  device: STM32H743VGTx
+  device-pack: Keil::STM32H7xx_DFP@3.1.1
+  processor:
+    endian: little
+    fpu: dp
+    core: Cortex-M7
+  packs:
+    - pack: ARM::CMSIS@5.9.0
+      path: ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0
+    - pack: Keil::STM32H7xx_DFP@3.1.1
+      path: ${CMSIS_PACK_ROOT}/Keil/STM32H7xx_DFP/3.1.1
+  optimize: speed
+  debug: on
+  misc:
+    C:
+      - -std=c99
+      - -fno-rtti
+      - -funsigned-char
+      - -fshort-enums
+      - -fshort-wchar
+      - -ffunction-sections
+      - -Wno-packed
+      - -Wno-missing-variable-declarations
+      - -Wno-missing-prototypes
+      - -Wno-missing-noreturn
+      - -Wno-sign-conversion
+      - -Wno-nonportable-include-path
+      - -Wno-reserved-id-macro
+      - -Wno-unused-macros
+      - -Wno-documentation-unknown-command
+      - -Wno-documentation
+      - -Wno-license-management
+      - -Wno-parentheses-equality
+    CPP:
+      - -xc++
+      - -std=c++11
+      - -fno-rtti
+      - -funsigned-char
+      - -fshort-enums
+      - -fshort-wchar
+      - -ffunction-sections
+      - -Wno-packed
+      - -Wno-missing-variable-declarations
+      - -Wno-missing-prototypes
+      - -Wno-missing-noreturn
+      - -Wno-sign-conversion
+      - -Wno-nonportable-include-path
+      - -Wno-reserved-id-macro
+      - -Wno-unused-macros
+      - -Wno-documentation-unknown-command
+      - -Wno-documentation
+      - -Wno-license-management
+      - -Wno-parentheses-equality
+    Link:
+      - --library_type=microlib
+      - --map
+      - --load_addr_map_info
+      - --xref
+      - --callgraph
+      - --symbols
+      - --info sizes
+      - --info totals
+      - --info unused
+      - --info veneers
+      - --strict
+      - --summary_stderr
+      - --info summarysizes
+  define:
+    - USE_HAL_DRIVER
+    - STM32H743xx
+    - __MICROLIB
+    - STM32H743xx
+    - _RTE_
+  add-path:
+    - ../Core/Inc
+    - ../Drivers/STM32H7xx_HAL_Driver/Inc
+    - ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy
+    - ../Drivers/CMSIS/Device/ST/STM32H7xx/Include
+    - ../Drivers/CMSIS/Include
+    - ../Drivers/User/Inc
+    - RTE/_threeWh
+    - ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+    - ${CMSIS_PACK_ROOT}/Keil/STM32H7xx_DFP/3.1.1/Drivers/CMSIS/Device/ST/STM32H7xx/Include
+  output-dirs:
+    intdir: tmp/threeWh/threeWh
+    outdir: out/threeWh/threeWh
+    rtedir: RTE
+  output:
+    - type: elf
+      file: threeWh.axf
+  components:
+    - component: ARM::CMSIS:CORE@5.6.0
+      condition: ARMv6_7_8-M Device
+      from-pack: ARM::CMSIS@5.9.0
+      selected-by: ARM::CMSIS:CORE
+  linker:
+    script: threeWh_threeWh.sct
+  groups:
+    - group: Application/MDK-ARM
+      files:
+        - file: startup_stm32h743xx.s
+          category: sourceAsm
+          misc:
+            ASM:
+              - -masm=auto
+    - group: Application/User/Core
+      files:
+        - file: ../Core/Src/main.c
+          category: sourceC
+        - file: ../Core/Src/gpio.c
+          category: sourceC
+        - file: ../Core/Src/tim.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Core/Src/stm32h7xx_it.c
+          category: sourceC
+        - file: ../Core/Src/stm32h7xx_hal_msp.c
+          category: sourceC
+        - file: ../Core/Src/dj.c
+          category: sourceC
+    - group: Drivers/STM32H7xx_HAL_Driver
+      files:
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c
+          category: sourceC
+    - group: Drivers/CMSIS
+      files:
+        - file: ../Core/Src/system_stm32h7xx.c
+          category: sourceC
+    - group: Drivers/User
+      files:
+        - file: ../Drivers/User/Src/lcd_fonts.c
+          category: sourceC
+        - file: ../Drivers/User/Src/lcd_image.c
+          category: sourceC
+        - file: ../Drivers/User/Src/lcd_spi_130.c
+          category: sourceC
+  constructed-files:
+    - file: RTE/_threeWh/RTE_Components.h
+      category: header
+  licenses:
+    - license: <unknown>
+      packs:
+        - pack: ARM::CMSIS@5.9.0
+      components:
+        - component: ARM::CMSIS:CORE@5.6.0
+    - license: <unknown>
+      packs:
+        - pack: Keil::STM32H7xx_DFP@3.1.1

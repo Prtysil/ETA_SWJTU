@@ -1,0 +1,214 @@
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+armclang: error: Failed to check out a license.
+The license file could not be found. Check that ARMLMD_LICENSE_FILE is set correctly.
+armclang: note: ARMLMD_LICENSE_FILE is not set. You must set this to the path to your license.
+armclang: note: Information about this error is available at https://developer.arm.com/support/lic87/m1
+ General licensing information is available at https://developer.arm.com/support/licensing/
+ If you need further help, provide this complete error message to your supplier or to Arm via https://services.arm.com/support/s/contactsupport
+ - ARMLMD_LICENSE_FILE: unset
+ - LM_LICENSE_FILE: unset
+ - ARM_PRODUCT_DEF: unset
+ - ARM_PRODUCT_PATH: unset
+ - ARM_TOOL_VARIANT: unset
+ - Product location: c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\sw\mappings
+ - Toolchain location: c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\bin
+ - Selected tool variant: product
+armclang: note:  - Checkout feature: compiler5
+ - Feature version: 5.0202403
+ - Flex error code: -1
+Product: Arm Compiler for Embedded 6.22 Professional
+Component: Arm Compiler for Embedded 6.22
+Tool: armclang [5ee92100]
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+armclang: error: Failed to check out a license.
+The license file could not be found. Check that ARMLMD_LICENSE_FILE is set correctly.
+armclang: note: ARMLMD_LICENSE_FILE is not set. You must set this to the path to your license.
+armclang: note: Information about this error is available at https://developer.arm.com/support/lic87/m1
+ General licensing information is available at https://developer.arm.com/support/licensing/
+ If you need further help, provide this complete error message to your supplier or to Arm via https://services.arm.com/support/s/contactsupport
+ - ARMLMD_LICENSE_FILE: unset
+ - LM_LICENSE_FILE: unset
+ - ARM_PRODUCT_DEF: unset
+ - ARM_PRODUCT_PATH: unset
+ - ARM_TOOL_VARIANT: unset
+ - Product location: c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\sw\mappings
+ - Toolchain location: c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\bin
+ - Selected tool variant: product
+armclang: note:  - Checkout feature: compiler5
+ - Feature version: 5.0202403
+ - Flex error code: -1
+Product: Arm Compiler for Embedded 6.22 Professional
+Component: Arm Compiler for Embedded 6.22
+Tool: armclang [5ee92100]
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: D:/workspace/threeWh/MDK-ARM/tmp/threeWh/threeWh/CMakeFiles/CMakeScratch/TryCompile-gz23sf
+
+Run Build Command(s):C:/Users/z/.vcpkg/artifacts/vcpkg-ce-default/tools.ninja.build.ninja/1.10.2/ninja.exe cmTC_288d4 && [1/2] Building C object CMakeFiles\cmTC_288d4.dir\CMakeCCompilerABI.c.obj
+FAILED: CMakeFiles/cmTC_288d4.dir/CMakeCCompilerABI.c.obj 
+c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\bin\armclang.exe   -mcpu=Cortex-M7 -mfpu=fpv5-d16 -mfloat-abi=hard -o CMakeFiles\cmTC_288d4.dir\CMakeCCompilerABI.c.obj -c C:\Users\z\.vcpkg\artifacts\vcpkg-ce-default\tools.kitware.cmake\3.25.2\share\cmake-3.25\Modules\CMakeCCompilerABI.c
+armclang: error: Failed to check out a license.
+The license file could not be found. Check that ARMLMD_LICENSE_FILE is set correctly.
+armclang: note: ARMLMD_LICENSE_FILE is not set. You must set this to the path to your license.
+armclang: note: Information about this error is available at https://developer.arm.com/support/lic87/m1
+ General licensing information is available at https://developer.arm.com/support/licensing/
+ If you need further help, provide this complete error message to your supplier or to Arm via https://services.arm.com/support/s/contactsupport
+ - ARMLMD_LICENSE_FILE: unset
+ - LM_LICENSE_FILE: unset
+ - ARM_PRODUCT_DEF: unset
+ - ARM_PRODUCT_PATH: unset
+ - ARM_TOOL_VARIANT: unset
+ - Product location: c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\sw\mappings
+ - Toolchain location: c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\bin
+ - Selected tool variant: product
+armclang: note:  - Checkout feature: compiler5
+ - Feature version: 5.0202403
+ - Flex error code: -1
+Product: Arm Compiler for Embedded 6.22 Professional
+Component: Arm Compiler for Embedded 6.22
+Tool: armclang [5ee92100]
+
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/workspace/threeWh/MDK-ARM/tmp/threeWh/threeWh/CMakeFiles/CMakeScratch/TryCompile-awxgyn
+
+Run Build Command(s):C:/Users/z/.vcpkg/artifacts/vcpkg-ce-default/tools.ninja.build.ninja/1.10.2/ninja.exe cmTC_71853 && [1/2] Building C object CMakeFiles\cmTC_71853.dir\testCCompiler.c.obj
+FAILED: CMakeFiles/cmTC_71853.dir/testCCompiler.c.obj 
+c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\bin\armclang.exe   -mcpu=Cortex-M7 -mfpu=fpv5-d16 -mfloat-abi=hard -o CMakeFiles\cmTC_71853.dir\testCCompiler.c.obj -c D:\workspace\threeWh\MDK-ARM\tmp\threeWh\threeWh\CMakeFiles\CMakeScratch\TryCompile-awxgyn\testCCompiler.c
+armclang: error: Failed to check out a license.
+The license file could not be found. Check that ARMLMD_LICENSE_FILE is set correctly.
+armclang: note: ARMLMD_LICENSE_FILE is not set. You must set this to the path to your license.
+armclang: note: Information about this error is available at https://developer.arm.com/support/lic87/m1
+ General licensing information is available at https://developer.arm.com/support/licensing/
+ If you need further help, provide this complete error message to your supplier or to Arm via https://services.arm.com/support/s/contactsupport
+ - ARMLMD_LICENSE_FILE: unset
+ - LM_LICENSE_FILE: unset
+ - ARM_PRODUCT_DEF: unset
+ - ARM_PRODUCT_PATH: unset
+ - ARM_TOOL_VARIANT: unset
+ - Product location: c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\sw\mappings
+ - Toolchain location: c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\bin
+ - Selected tool variant: product
+armclang: note:  - Checkout feature: compiler5
+ - Feature version: 5.0202403
+ - Flex error code: -1
+Product: Arm Compiler for Embedded 6.22 Professional
+Component: Arm Compiler for Embedded 6.22
+Tool: armclang [5ee92100]
+
+ninja: build stopped: subcommand failed.
+
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+armclang: error: Failed to check out a license.
+The license file could not be found. Check that ARMLMD_LICENSE_FILE is set correctly.
+armclang: note: ARMLMD_LICENSE_FILE is not set. You must set this to the path to your license.
+armclang: note: Information about this error is available at https://developer.arm.com/support/lic87/m1
+ General licensing information is available at https://developer.arm.com/support/licensing/
+ If you need further help, provide this complete error message to your supplier or to Arm via https://services.arm.com/support/s/contactsupport
+ - ARMLMD_LICENSE_FILE: unset
+ - LM_LICENSE_FILE: unset
+ - ARM_PRODUCT_DEF: unset
+ - ARM_PRODUCT_PATH: unset
+ - ARM_TOOL_VARIANT: unset
+ - Product location: c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\sw\mappings
+ - Toolchain location: c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\bin
+ - Selected tool variant: product
+armclang: note:  - Checkout feature: compiler5
+ - Feature version: 5.0202403
+ - Flex error code: -1
+Product: Arm Compiler for Embedded 6.22 Professional
+Component: Arm Compiler for Embedded 6.22
+Tool: armclang [5ee92100]
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+armclang: error: Failed to check out a license.
+The license file could not be found. Check that ARMLMD_LICENSE_FILE is set correctly.
+armclang: note: ARMLMD_LICENSE_FILE is not set. You must set this to the path to your license.
+armclang: note: Information about this error is available at https://developer.arm.com/support/lic87/m1
+ General licensing information is available at https://developer.arm.com/support/licensing/
+ If you need further help, provide this complete error message to your supplier or to Arm via https://services.arm.com/support/s/contactsupport
+ - ARMLMD_LICENSE_FILE: unset
+ - LM_LICENSE_FILE: unset
+ - ARM_PRODUCT_DEF: unset
+ - ARM_PRODUCT_PATH: unset
+ - ARM_TOOL_VARIANT: unset
+ - Product location: c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\sw\mappings
+ - Toolchain location: c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\bin
+ - Selected tool variant: product
+armclang: note:  - Checkout feature: compiler5
+ - Feature version: 5.0202403
+ - Flex error code: -1
+Product: Arm Compiler for Embedded 6.22 Professional
+Component: Arm Compiler for Embedded 6.22
+Tool: armclang [5ee92100]
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: D:/workspace/threeWh/MDK-ARM/tmp/threeWh/threeWh/CMakeFiles/CMakeScratch/TryCompile-f39jc9
+
+Run Build Command(s):C:/Users/z/.vcpkg/artifacts/vcpkg-ce-default/tools.ninja.build.ninja/1.10.2/ninja.exe cmTC_ba60a && [1/2] Building C object CMakeFiles\cmTC_ba60a.dir\CMakeCCompilerABI.c.obj
+FAILED: CMakeFiles/cmTC_ba60a.dir/CMakeCCompilerABI.c.obj 
+c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\bin\armclang.exe   -mcpu=Cortex-M7 -mfpu=fpv5-d16 -mfloat-abi=hard -o CMakeFiles\cmTC_ba60a.dir\CMakeCCompilerABI.c.obj -c C:\Users\z\.vcpkg\artifacts\vcpkg-ce-default\tools.kitware.cmake\3.25.2\share\cmake-3.25\Modules\CMakeCCompilerABI.c
+armclang: error: Failed to check out a license.
+The license file could not be found. Check that ARMLMD_LICENSE_FILE is set correctly.
+armclang: note: ARMLMD_LICENSE_FILE is not set. You must set this to the path to your license.
+armclang: note: Information about this error is available at https://developer.arm.com/support/lic87/m1
+ General licensing information is available at https://developer.arm.com/support/licensing/
+ If you need further help, provide this complete error message to your supplier or to Arm via https://services.arm.com/support/s/contactsupport
+ - ARMLMD_LICENSE_FILE: unset
+ - LM_LICENSE_FILE: unset
+ - ARM_PRODUCT_DEF: unset
+ - ARM_PRODUCT_PATH: unset
+ - ARM_TOOL_VARIANT: unset
+ - Product location: c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\sw\mappings
+ - Toolchain location: c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\bin
+ - Selected tool variant: product
+armclang: note:  - Checkout feature: compiler5
+ - Feature version: 5.0202403
+ - Flex error code: -1
+Product: Arm Compiler for Embedded 6.22 Professional
+Component: Arm Compiler for Embedded 6.22
+Tool: armclang [5ee92100]
+
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/workspace/threeWh/MDK-ARM/tmp/threeWh/threeWh/CMakeFiles/CMakeScratch/TryCompile-bygnin
+
+Run Build Command(s):C:/Users/z/.vcpkg/artifacts/vcpkg-ce-default/tools.ninja.build.ninja/1.10.2/ninja.exe cmTC_1b584 && [1/2] Building C object CMakeFiles\cmTC_1b584.dir\testCCompiler.c.obj
+FAILED: CMakeFiles/cmTC_1b584.dir/testCCompiler.c.obj 
+c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\bin\armclang.exe   -mcpu=Cortex-M7 -mfpu=fpv5-d16 -mfloat-abi=hard -o CMakeFiles\cmTC_1b584.dir\testCCompiler.c.obj -c D:\workspace\threeWh\MDK-ARM\tmp\threeWh\threeWh\CMakeFiles\CMakeScratch\TryCompile-bygnin\testCCompiler.c
+armclang: error: Failed to check out a license.
+The license file could not be found. Check that ARMLMD_LICENSE_FILE is set correctly.
+armclang: note: ARMLMD_LICENSE_FILE is not set. You must set this to the path to your license.
+armclang: note: Information about this error is available at https://developer.arm.com/support/lic87/m1
+ General licensing information is available at https://developer.arm.com/support/licensing/
+ If you need further help, provide this complete error message to your supplier or to Arm via https://services.arm.com/support/s/contactsupport
+ - ARMLMD_LICENSE_FILE: unset
+ - LM_LICENSE_FILE: unset
+ - ARM_PRODUCT_DEF: unset
+ - ARM_PRODUCT_PATH: unset
+ - ARM_TOOL_VARIANT: unset
+ - Product location: c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\sw\mappings
+ - Toolchain location: c:\Users\z\.vcpkg\artifacts\2139c4c6\compilers.arm.armclang\6.22.0\bin
+ - Selected tool variant: product
+armclang: note:  - Checkout feature: compiler5
+ - Feature version: 5.0202403
+ - Flex error code: -1
+Product: Arm Compiler for Embedded 6.22 Professional
+Component: Arm Compiler for Embedded 6.22
+Tool: armclang [5ee92100]
+
+ninja: build stopped: subcommand failed.
+
+
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<cprj schemaVersion="2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CPRJ.xsd">
+  <created timestamp="2024-04-05T19:58:53" tool="csolution 2.2.1"/>
+
+  <info isLayer="false">
+    <description>Automatically generated project</description>
+  </info>
+
+  <packages>
+    <package name="CMSIS" vendor="ARM" version="5.9.0:5.9.0"/>
+    <package name="STM32H7xx_DFP" vendor="Keil" version="3.1.1:3.1.1"/>
+  </packages>
+
+  <compilers>
+    <compiler name="AC6" version="6.22.0"/>
+  </compilers>
+
+  <target Dendian="Little-endian" Dfpu="DP_FPU" Dname="STM32H743VGTx" Dvendor="STMicroelectronics:13">
+    <output elf="threeWh.axf" intdir="tmp/threeWh/threeWh" name="threeWh" outdir="out/threeWh/threeWh" rtedir="RTE" type="exe"/>
+    <options debug="on" optimize="speed"/>
+    <cflags add="-std=c99 -fno-rtti -funsigned-char -fshort-enums -fshort-wchar -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality" compiler="AC6"/>
+    <cxxflags add="-xc++ -std=c++11 -fno-rtti -funsigned-char -fshort-enums -fshort-wchar -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality" compiler="AC6"/>
+    <ldflags add="--library_type=microlib --map --load_addr_map_info --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers --strict --summary_stderr --info summarysizes" compiler="AC6" file="threeWh_threeWh.sct"/>
+    <defines>USE_HAL_DRIVER;STM32H743xx;__MICROLIB</defines>
+    <includes>../Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;../Drivers/User/Inc</includes>
+  </target>
+
+  <components>
+    <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.6.0"/>
+  </components>
+
+  <files>
+    <group name="Application/MDK-ARM">
+      <file category="sourceAsm" name="startup_stm32h743xx.s">
+        <asflags add="-masm=auto" compiler="AC6"/>
+      </file>
+    </group>
+    <group name="Application/User/Core">
+      <file category="sourceC" name="../Core/Src/main.c"/>
+      <file category="sourceC" name="../Core/Src/gpio.c"/>
+      <file category="sourceC" name="../Core/Src/tim.c">
+        <cxxflags add="-xc++" compiler="AC6"/>
+      </file>
+      <file category="sourceC" name="../Core/Src/stm32h7xx_it.c"/>
+      <file category="sourceC" name="../Core/Src/stm32h7xx_hal_msp.c"/>
+      <file category="sourceC" name="../Core/Src/dj.c"/>
+    </group>
+    <group name="Drivers/STM32H7xx_HAL_Driver">
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c"/>
+      <file category="sourceC" name="../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c"/>
+    </group>
+    <group name="Drivers/CMSIS">
+      <file category="sourceC" name="../Core/Src/system_stm32h7xx.c"/>
+    </group>
+    <group name="Drivers/User">
+      <file category="sourceC" name="../Drivers/User/Src/lcd_fonts.c"/>
+      <file category="sourceC" name="../Drivers/User/Src/lcd_image.c"/>
+      <file category="sourceC" name="../Drivers/User/Src/lcd_spi_130.c"/>
+    </group>
+  </files>
+</cprj>
+

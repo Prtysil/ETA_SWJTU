@@ -1,0 +1,9 @@
+build-idx:
+  generated-by: csolution version 2.2.1
+  csolution: threeWh.csolution.yml
+  cprojects:
+    - cproject: threeWh.cproject.yml
+  cbuilds:
+    - cbuild: threeWh+threeWh.cbuild.yml
+      project: threeWh
+      configuration: +threeWh

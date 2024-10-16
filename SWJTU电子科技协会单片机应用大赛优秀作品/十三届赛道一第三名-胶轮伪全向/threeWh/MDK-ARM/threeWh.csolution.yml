@@ -1,0 +1,10 @@
+solution:
+  created-by: uv2csolution@1.3.0
+  created-for: CMSIS-Toolbox@2.2.0
+  compiler: AC6
+  target-types:
+    - type: threeWh
+      device: STM32H743VGTx
+      optimize: speed
+  projects:
+    - project: threeWh.cproject.yml
