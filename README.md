@@ -31,6 +31,7 @@
     - Linux系统安装和基本使用
     - C语言
     - 单片机
+    - github和git的使用
 
 # 最后
 如果您对该仓库有任何建议或意见，欢迎提交issue或pull request。
