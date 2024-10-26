@@ -7,7 +7,7 @@
 本指南的诞生源于2024年10月会长在全员大会中的演讲：“提高社员的归属感，尽可能的让大家渡过一个不后悔的社团生活。”
 
 # 目录
-- step0:万物之初:Hello world!
+- [step0:万物之初：踏出追梦路上的第一步](https://github.com/Prtysil/ETA_SWJTU/blob/main/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%87%AA%E5%AD%A6%E6%8C%87%E5%8D%97/step0.md)
 - step1: ... 
 - step2: ...
 - 待定。。。
