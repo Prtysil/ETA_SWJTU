@@ -1,7 +1,7 @@
 # Electronic Technology Association of South West JiaoTong University (ETA_SWJTU)
 
 # 分享协会文化，传承科创精神
-西南交通大学电子科技协会(ETA_SWJTU)自2024年以来的官方开源仓库。目前还处于建设当中。
+西南交通大学电子科技协会(ETA_SWJTU)自2024年10月以来的官方开源仓库。目前还处于建设当中。
 
 ---
 # About US
