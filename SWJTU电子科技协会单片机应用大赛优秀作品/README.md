@@ -11,8 +11,7 @@
 * Hardware文件夹存放硬件pcb的设计图
 * readme文件写一些说明
 
-## SWJTU电子科技协会联系分式
+### SWJTU电子科技协会联系分式
 B站ID：[SWJTU电子科技协会](https://space.bilibili.com/3493078602090595?spm_id_from=333.1296.0.0)
 官Q：2350443785
 粉丝群：649012712
-
