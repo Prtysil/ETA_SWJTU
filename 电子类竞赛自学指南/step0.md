@@ -1,8 +1,10 @@
-# step0:万物之初：踏出追梦路上的第一步
+# step0: 万物之初：踏出追梦路上的第一步
 
 ---
 # 目录
-[如何科学的提问](#如何科学的提问how-to-ask-questions-the-smart-way)
+- [step0: 万物之初：踏出追梦路上的第一步](#step0-万物之初踏出追梦路上的第一步)
+- [目录](#目录)
+- [如何科学的提问(How To Ask Questions The Smart Way)](#如何科学的提问how-to-ask-questions-the-smart-way)
 
 ---
 # 如何科学的提问(How To Ask Questions The Smart Way)
@@ -19,3 +21,5 @@
     | 知道问题是什么 | 不知道问题是什么 | 不知道问题是什么 |
 
 更多内容请敬请期待。。。。。。
+
+最后更新日期：2024/10/30
